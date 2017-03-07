@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <meta charset="utf-8">
+    
+    <title>Create a single page with only CSS &amp; HTML from a PSD design file | Marslayman</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="This is just a practice for learning CSS and HTML, so the whole page is not responsible and write with no any javascript in the page.
+
+What I learned in this practice
+how to extract required elements">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Create a single page with only CSS & HTML from a PSD design file">
+<meta property="og:url" content="http://marslayman.github.io/2017/03/07/Create-a-single-page-with-only-CSS-HTML-from-a-PSD-design-file/index.html">
+<meta property="og:site_name" content="Marslayman">
+<meta property="og:description" content="This is just a practice for learning CSS and HTML, so the whole page is not responsible and write with no any javascript in the page.
+
+What I learned in this practice
+how to extract required elements">
+<meta property="og:image" content="http://marslayman.github.io/css/images/header2.jpg">
+<meta property="og:updated_time" content="2017-03-07T08:48:11.129Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Create a single page with only CSS & HTML from a PSD design file">
+<meta name="twitter:description" content="This is just a practice for learning CSS and HTML, so the whole page is not responsible and write with no any javascript in the page.
+
+What I learned in this practice
+how to extract required elements">
+<meta name="twitter:image" content="http://marslayman.github.io/css/images/header2.jpg">
+    
+
+    
+
+    
+        <link rel="icon" href="/css/images/favicon.ico" />
+    
+
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/libs/open-sans/styles.css">
+    <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/libs/jquery/2.1.3/jquery.min.js"></script>
+    
+    
+        <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+    
+    
+        <link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+    
+    
+    
+    
+
+
+</head>
+
+<body>
+    <div id="container">
+        <header id="header">
+    <div id="header-main" class="header-inner">
+        <div class="outer">
+            <a href="/" id="logo">
+                <i class="logo"></i>
+                <span class="site-title">Marslayman</span>
+            </a>
+            <nav id="main-nav">
+                
+                    <a class="main-nav-link" href="/.">Home</a>
+                
+                    <a class="main-nav-link" href="/archives">Archives</a>
+                
+                    <a class="main-nav-link" href="/categories">Categories</a>
+                
+                    <a class="main-nav-link" href="/tags">Tags</a>
+                
+                    <a class="main-nav-link" href="/about">About</a>
+                
+            </nav>
+            
+                
+                <nav id="sub-nav">
+                    <div class="profile" id="profile-nav">
+                        <a id="profile-anchor" href="javascript:;">
+                            <img class="avatar" src="/css/images/avatar.png" />
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                    </div>
+                </nav>
+            
+            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div>
+        </div>
+    </div>
+    <div id="main-nav-mobile" class="header-sub header-inner">
+        <table class="menu outer">
+            <tr>
+                
+                    <td><a class="main-nav-link" href="/.">Home</a></td>
+                
+                    <td><a class="main-nav-link" href="/archives">Archives</a></td>
+                
+                    <td><a class="main-nav-link" href="/categories">Categories</a></td>
+                
+                    <td><a class="main-nav-link" href="/tags">Tags</a></td>
+                
+                    <td><a class="main-nav-link" href="/about">About</a></td>
+                
+                <td>
+                    
+    <div class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
+    </div>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+</header>
+
+        <div class="outer">
+            
+                
+
+<aside id="profile">
+    <div class="inner profile-inner">
+        <div class="base-info profile-block">
+            <img id="avatar" src="/css/images/avatar.png" />
+            <h2 id="name">Marslayman</h2>
+            <h3 id="title">On the way of FE</h3>
+            <span id="location"><i class="fa fa-map-marker"></i>Cheng Du, China</span>
+            <a id="follow" target="_blank" href="https://github.com/marslayman/">FOLLOW</a>
+        </div>
+        <div class="article-info profile-block">
+            <div class="article-info-block">
+                2
+                <span>posts</span>
+            </div>
+            <div class="article-info-block">
+                2
+                <span>tags</span>
+            </div>
+        </div>
+        
+        <div class="profile-block social-links">
+            <table>
+                <tr>
+                    
+                    
+                    <td>
+                        <a href="https://github.com/Marslayman" target="_blank" title="github" class=tooltip>
+                            <i class="fa fa-github"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="http://www.weibo.com/2152231983/profile?topnav=1&wvr=6&is_all=1" target="_blank" title="weibo" class=tooltip>
+                            <i class="fa fa-weibo"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="mailto:490135048@qq.com" target="_blank" title="envelope" class=tooltip>
+                            <i class="fa fa-envelope"></i>
+                        </a>
+                    </td>
+                    
+                </tr>
+            </table>
+        </div>
+        
+    </div>
+</aside>
+
+            
+            <section id="main"><article id="post-Create-a-single-page-with-only-CSS-HTML-from-a-PSD-design-file" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+            
+	
+		<img src="/css/images/header2.jpg" class="article-banner" />
+	
+
+
+
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+            Create a single page with only CSS &amp; HTML from a PSD design file
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2017/03/07/Create-a-single-page-with-only-CSS-HTML-from-a-PSD-design-file/">
+            <time datetime="2017-03-07T07:29:13.000Z" itemprop="datePublished">2017-03-07</time>
+        </a>
+    </div>
+
+
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/Frontend/">Frontend</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/Frontend/practice/">practice</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/HTML5/">HTML5</a>, <a class="tag-link" href="/tags/css3/">css3</a>
+    </div>
+
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <blockquote>
+<p>This is just a practice for learning CSS and HTML, so the whole page is not responsible and write with no any javascript in the page.</p>
+</blockquote>
+<h3 id="What-I-learned-in-this-practice"><a href="#What-I-learned-in-this-practice" class="headerlink" title="What I learned in this practice"></a>What I learned in this practice</h3><ul>
+<li><strong>how to extract required elements from the original design file</strong></li>
+<li><strong>how to write the basic frame of the page in HTML</strong></li>
+<li><strong>css knowledge learned in this practice</strong></li>
+</ul>
+<hr>
+<h3 id="How-to-extract-required-elements-from-the-original-design-file"><a href="#How-to-extract-required-elements-from-the-original-design-file" class="headerlink" title="How to extract required elements from the original design file"></a>How to extract required elements from the original design file</h3><p>In this practice ,the PSD file I used as the original file was downloaded from the template website <strong><a href="http://pixelhint.com/" target="_blank" rel="external">Pixlhint</a></strong> </p>
+<a id="more"></a>
+<p>Below are some summaries I learned from this practice about extracting from original design file.</p>
+<ul>
+<li><p><strong>Give a general look to the design file</strong></p>
+<blockquote>
+<p>When get the design file ,the first thing should be openning it in a gallery view to have a general look about the whole page.</p>
+<p>To determine which part should be common part and which part should be individual part in the page ,so that can determine the file structure when start to write the page code.</p>
+</blockquote>
+</li>
+<li><p><strong>Do not put every element to a picture</strong> </p>
+<blockquote>
+<p>When start to get material from the design file ,should always think about it ,what do I need to cut as a picture and what I can use CSS to get the same result.</p>
+<p>it is better to use CSS if the material is easy to get rather than put it as a picture</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="How-to-write-the-basic-frame-of-the-page-in-HTML"><a href="#How-to-write-the-basic-frame-of-the-page-in-HTML" class="headerlink" title="How to write the basic frame of the page in HTML"></a>How to write the basic frame of the page in HTML</h3><p>In the basic HTML page ,I use HTML5 tags to structure the page frame, semantization is part of the HTML5 standard ,semantization tags such as <code>&lt;header&gt;</code> ,<code>&lt;nav&gt;</code> ,<code>&lt;artile&gt;</code> ,<code>&lt;section&gt;</code>, <code>&lt;footer&gt;</code> and so on.</p>
+<p>When add selector to tags in the page, we should consider which tag we should add a selector ,not just used for CSS but also need to consider the usage when we need to use javascript in the page. The selector name should be <strong>WYSIWYG</strong>, such as <code>class=&quot;header-nav-list&quot;</code> or <code>class=&quot;nav-list-item&quot;</code>.</p>
+<h3 id="CSS-knowlege-learned-in-this-practice"><a href="#CSS-knowlege-learned-in-this-practice" class="headerlink" title="CSS knowlege learned in this practice"></a>CSS knowlege learned in this practice</h3><p>Completed this page ,below are some knowledge checkpoints I learned.</p>
+<ul>
+<li><p><strong>Reset the style for default element</strong></p>
+<blockquote>
+<p>Below are some mostly used reset css style </p>
+</blockquote>
+  <figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">html</span>, <span class="selector-tag">body</span>, <span class="selector-tag">div</span>, <span class="selector-tag">span</span>, <span class="selector-tag">object</span>, <span class="selector-tag">iframe</span>, <span class="selector-tag">blockquote</span>,<span class="selector-tag">p</span>, <span class="selector-tag">pre</span>, <span class="selector-tag">a</span>, <span class="selector-tag">h4</span>,<span class="selector-tag">abbr</span>, <span class="selector-tag">address</span>, <span class="selector-tag">cite</span>, <span class="selector-tag">code</span>, <span class="selector-tag">del</span>, <span class="selector-tag">dfn</span>, <span class="selector-tag">em</span>, <span class="selector-tag">img</span>, <span class="selector-tag">ins</span>, <span class="selector-tag">kbd</span>, <span class="selector-tag">q</span>, <span class="selector-tag">s</span>, <span class="selector-tag">samp</span>, <span class="selector-tag">small</span>, <span class="selector-tag">strike</span>, <span class="selector-tag">strong</span>, <span class="selector-tag">sub</span>, <span class="selector-tag">sup</span>, <span class="selector-tag">tt</span>, <span class="selector-tag">var</span>, <span class="selector-tag">b</span>, <span class="selector-tag">u</span>, <span class="selector-tag">i</span>, <span class="selector-tag">center</span>, <span class="selector-tag">dl</span>, <span class="selector-tag">dt</span>, <span class="selector-tag">dd</span>, <span class="selector-tag">ol</span>, <span class="selector-tag">ul</span>, <span class="selector-tag">li</span>, <span class="selector-tag">fieldset</span>, <span class="selector-tag">form</span>, <span class="selector-tag">label</span>, <span class="selector-tag">legend</span>, <span class="selector-tag">table</span>, <span class="selector-tag">caption</span>, <span class="selector-tag">tbody</span>, <span class="selector-tag">tfoot</span>, <span class="selector-tag">thead</span>, <span class="selector-tag">tr</span>, <span class="selector-tag">th</span>, <span class="selector-tag">td</span>, <span class="selector-tag">article</span>, <span class="selector-tag">aside</span>, <span class="selector-tag">canvas</span>, <span class="selector-tag">details</span>, <span class="selector-tag">embed</span>, <span class="selector-tag">figure</span>, <span class="selector-tag">figcaption</span>, <span class="selector-tag">footer</span>, <span class="selector-tag">header</span>, <span class="selector-tag">hgroup</span>, <span class="selector-tag">menu</span>, <span class="selector-tag">nav</span>, <span class="selector-tag">output</span>, <span class="selector-tag">ruby</span>, <span class="selector-tag">section</span>, <span class="selector-tag">summary</span>, <span class="selector-tag">time</span>, <span class="selector-tag">mark</span>, <span class="selector-tag">audio</span>, <span class="selector-tag">video</span> &#123;</div><div class="line"><span class="attribute">margin</span>: <span class="number">0</span>;</div><div class="line"><span class="attribute">padding</span>: <span class="number">0</span>;</div><div class="line"><span class="attribute">border</span>: <span class="number">0</span>;</div><div class="line"><span class="attribute">font-size</span>: <span class="number">100%</span>;</div><div class="line"><span class="attribute">font</span>: inherit;</div><div class="line"><span class="attribute">vertical-align</span>: baseline;</div><div class="line"><span class="attribute">outline</span>: none;</div><div class="line"><span class="attribute">box-sizing</span>: border-box;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+  <figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/*html &#123; height: 101%; &#125;   //强制出现滚动条*/</span></div><div class="line"><span class="selector-tag">body</span> &#123;</div><div class="line">	<span class="attribute">font-size</span>: <span class="number">62.5%</span>;</div><div class="line">	<span class="attribute">line-height</span>: <span class="number">1</span>;</div><div class="line">	<span class="attribute">font-family</span>: Arial, Tahoma, sans-serif;</div><div class="line">&#125;</div><div class="line"><span class="selector-tag">article</span>, <span class="selector-tag">aside</span>, <span class="selector-tag">details</span>, <span class="selector-tag">figcaption</span>, <span class="selector-tag">figure</span>, <span class="selector-tag">footer</span>, <span class="selector-tag">header</span>, <span class="selector-tag">hgroup</span>, <span class="selector-tag">menu</span>, <span class="selector-tag">nav</span>, <span class="selector-tag">section</span> &#123;</div><div class="line">	<span class="attribute">display</span>: block;</div><div class="line">&#125;</div><div class="line"><span class="selector-tag">ol</span>, <span class="selector-tag">ul</span> &#123;</div><div class="line">	<span class="attribute">list-style</span>: none;</div><div class="line">&#125;</div><div class="line"><span class="selector-tag">blockquote</span>, <span class="selector-tag">q</span> &#123;</div><div class="line">	<span class="attribute">quotes</span>: none;</div><div class="line">&#125;</div><div class="line"><span class="selector-tag">blockquote</span><span class="selector-pseudo">:before</span>, <span class="selector-tag">blockquote</span><span class="selector-pseudo">:after</span>, <span class="selector-tag">q</span><span class="selector-pseudo">:before</span>, <span class="selector-tag">q</span><span class="selector-pseudo">:after</span> &#123;</div><div class="line">	<span class="attribute">content</span>: <span class="string">''</span>;</div><div class="line">	<span class="attribute">content</span>: none;</div><div class="line">&#125;</div><div class="line"><span class="selector-tag">strong</span> &#123;</div><div class="line">	<span class="attribute">font-weight</span>: bold;</div><div class="line">&#125;</div><div class="line"><span class="selector-tag">table</span> &#123;</div><div class="line">	<span class="attribute">border-collapse</span>: collapse;</div><div class="line">	<span class="attribute">border-spacing</span>: <span class="number">0</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-tag">img</span> &#123;</div><div class="line">	<span class="attribute">border</span>: <span class="number">0</span>;</div><div class="line">	<span class="attribute">max-width</span>: <span class="number">100%</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-tag">a</span>&#123;</div><div class="line">	<span class="attribute">text-decoration</span>: none;</div><div class="line">&#125;</div><div class="line"><span class="selector-tag">p</span> &#123;</div><div class="line">	<span class="attribute">font-size</span>: <span class="number">1.2em</span>;</div><div class="line">	<span class="attribute">line-height</span>: <span class="number">1.0em</span>;</div><div class="line">	<span class="attribute">color</span>: <span class="number">#333</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<blockquote>
+<p><strong>clearfix</strong> style is used to clear the float ,make sure the father container’s height not be 0 when father container’s height is not defined.</p>
+<p>This <strong>clearfix</strong> selector should be added to father container’s sytle sheet.</p>
+<p>The comment part in below code block for float clear seems not work in the browser.</p>
+</blockquote>
+  <figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/* </span></div><div class="line">.clearfix:before, .container:after,.clearfix:after &#123;</div><div class="line">content: "";</div><div class="line">display: table;</div><div class="line">&#125;</div><div class="line">.clearfix:after &#123;</div><div class="line">	clear: both;</div><div class="line">&#125; </div><div class="line">*/</div><div class="line"><span class="selector-class">.clearfix</span><span class="selector-pseudo">:after</span> &#123;</div><div class="line">	<span class="attribute">content</span>: <span class="string">"."</span>;</div><div class="line">	<span class="attribute">display</span>: block;</div><div class="line">	<span class="attribute">clear</span>: both;</div><div class="line">	<span class="attribute">visibility</span>: hidden;</div><div class="line">	<span class="attribute">line-height</span>: <span class="number">0</span>;</div><div class="line">	<span class="attribute">height</span>: <span class="number">0</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-tag">html</span><span class="selector-attr">[xmlns]</span> <span class="selector-class">.clearfix</span> &#123;</div><div class="line">	<span class="attribute">display</span>: block;</div><div class="line">&#125;</div><div class="line"><span class="comment">/*</span></div><div class="line">html .clearfix &#123;</div><div class="line">	height: 1%;</div><div class="line">&#125;</div><div class="line">*/</div><div class="line"><span class="comment">/* IE 6/7 */</span></div><div class="line"><span class="selector-class">.clearfix</span> &#123;</div><div class="line">	<span class="attribute">zoom</span>: <span class="number">1</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p><strong>Use transform to achieve vertical center layout</strong></p>
+<blockquote>
+<p>In order to get the vertical center layout ,we need <code>position:absulute;</code> attribute.</p>
+<p>For element which has certain <code>width</code> and <code>height</code> ,we can use <code>margin</code> attribute to get what we want </p>
+<p>For element with uncertain <code>width</code> and <code>height</code> ,we can use <code>tranform</code> and <code>translate</code> attributes to get what we want</p>
+</blockquote>
+</li>
+</ul>
+<pre><code><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">html</span>,<span class="selector-tag">body</span></div><div class="line">&#123;<span class="comment">/*Full screen vertical center layout ,we need to set html and body tag first*/</span></div><div class="line">   <span class="attribute">width</span>:<span class="number">100%</span>;</div><div class="line">   <span class="attribute">height</span>:<span class="number">100%</span>;</div><div class="line">&#125;</div><div class="line">   &#123;<span class="comment">/*When know the certain width and height,use margin attribute*/</span></div><div class="line"><span class="attribute">position</span>:absolute;</div><div class="line"><span class="attribute">top</span>:<span class="number">50%</span>;</div><div class="line"><span class="attribute">left</span>:<span class="number">50%</span>;</div><div class="line"><span class="attribute">margin-left</span>:-width/<span class="number">2</span>;</div><div class="line"><span class="attribute">margin-top</span>:-height/<span class="number">2</span>;</div><div class="line">&#125;</div><div class="line"><span class="comment">/* use tranform attribute to get vertical center layout when the width and height are not certain */</span></div><div class="line"><span class="selector-class">.index-banner-text</span>&#123;</div><div class="line"><span class="attribute">position</span>:absolute</div><div class="line">top: <span class="number">50%</span>;</div><div class="line"><span class="attribute">left</span>: <span class="number">50%</span>;</div><div class="line"><span class="attribute">text-align</span>: center;</div><div class="line"><span class="attribute">color</span>: <span class="number">#FFF</span>;</div><div class="line"><span class="attribute">-webkit-transform</span>: <span class="built_in">translate</span>(-50%, -50%);</div><div class="line">        <span class="attribute">transform</span>: <span class="built_in">translate</span>(-50%, -50%);</div><div class="line"><span class="attribute">overflow</span>: hidden;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</code></pre><ul>
+<li><p><strong>display inline-block get 4px space</strong></p>
+<blockquote>
+<p>Set <code>Font-size</code> attirbute to 0px in father container in CSS to get rid of the 4px space for inline-block child element</p>
+</blockquote>
+  <figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.feature-panel-btn-group</span>&#123;</div><div class="line">	<span class="attribute">float</span>: right;</div><div class="line">	<span class="attribute">margin-top</span>: <span class="number">23px</span>;</div><div class="line">	<span class="attribute">font-size</span>: <span class="number">0px</span>; <span class="comment">/*清除子元素的inline-block的4px间距*/</span></div><div class="line">&#125;</div><div class="line"><span class="selector-class">.feature-panel-btn</span>&#123;</div><div class="line">	<span class="attribute">display</span>: inline-block;</div><div class="line">	<span class="attribute">width</span>: <span class="number">8px</span>;</div><div class="line">	<span class="attribute">height</span>: <span class="number">8px</span>;</div><div class="line">	<span class="attribute">margin-right</span>: <span class="number">10px</span>;</div><div class="line">	<span class="attribute">background-color</span>: <span class="number">#dedede</span>;</div><div class="line">	<span class="attribute">border-radius</span>: <span class="number">50%</span>;</div><div class="line">	<span class="attribute">background-color</span>: </div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p><strong>The usage of <code>overflow</code> attribute</strong></p>
+<blockquote>
+<p>Use overflow attribute adding to father container to achieve picture horizental list with float</p>
+</blockquote>
+  <figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/* 保证浮动能排成两列，container 的overflow保证为hidden */</span></div><div class="line"><span class="selector-class">.menu</span> &gt; <span class="selector-class">.container</span>&#123;</div><div class="line">	<span class="attribute">overflow</span>: hidden;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.menu-list</span>&#123;</div><div class="line">	<span class="attribute">width</span>: <span class="number">1160px</span>;</div><div class="line">	<span class="attribute">margin-top</span>: <span class="number">78px</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.menu-list</span> &gt; <span class="selector-class">.menu-list-item</span>&#123;</div><div class="line">	<span class="attribute">float</span>: left;</div><div class="line">	<span class="attribute">width</span>: <span class="number">520px</span>;</div><div class="line">	<span class="attribute">height</span>: <span class="number">96px</span>;</div><div class="line">	<span class="attribute">margin-right</span>: <span class="number">60px</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p><strong>User <code>border</code> attribute to achieve triangle</strong></p>
+  <figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.menu-tip-flag</span><span class="selector-pseudo">:after</span>&#123;</div><div class="line">	<span class="attribute">content</span>: <span class="string">""</span>;</div><div class="line">	<span class="attribute">width</span>: <span class="number">0px</span>;</div><div class="line">	<span class="attribute">height</span>: <span class="number">0px</span>;</div><div class="line">	<span class="attribute">position</span>: absolute;</div><div class="line">	<span class="attribute">left</span>: <span class="number">0</span>;</div><div class="line">	<span class="attribute">bottom</span>: <span class="number">0</span>;</div><div class="line">	<span class="attribute">border-left</span>: solid <span class="number">78px</span> <span class="number">#f34949</span>;</div><div class="line">	<span class="attribute">border-right</span>: solid <span class="number">78px</span> <span class="number">#F34949</span>;</div><div class="line">	<span class="attribute">border-bottom</span>: solid <span class="number">10px</span> <span class="number">#fff</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure></li>
+</ul>
+
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+    <div class="a2a_kit a2a_default_style">
+    <a class="a2a_dd" href="https://www.addtoany.com/share">Share</a>
+    <span class="a2a_divider"></span>
+    <a class="a2a_button_facebook"></a>
+    <a class="a2a_button_twitter"></a>
+    <a class="a2a_button_google_plus"></a>
+    <a class="a2a_button_pinterest"></a>
+    <a class="a2a_button_tumblr"></a>
+</div>
+<script type="text/javascript" src="//static.addtoany.com/menu/page.js"></script>
+<style>
+    .a2a_menu {
+        border-radius: 4px;
+    }
+    .a2a_menu a {
+        margin: 2px 0;
+        font-size: 14px;
+        line-height: 16px;
+        border-radius: 4px;
+        color: inherit !important;
+        font-family: 'Microsoft Yahei';
+    }
+    #a2apage_dropdown {
+        margin: 10px 0;
+    }
+    .a2a_mini_services {
+        padding: 10px;
+    }
+    a.a2a_i,
+    i.a2a_i {
+        width: 122px;
+        line-height: 16px;
+    }
+    a.a2a_i .a2a_svg,
+    a.a2a_more .a2a_svg {
+        width: 16px;
+        height: 16px;
+        line-height: 16px;
+        vertical-align: top;
+        background-size: 16px;
+    }
+    a.a2a_i {
+        border: none !important;
+    }
+    a.a2a_menu_show_more_less {
+        margin: 0;
+        padding: 10px 0;
+        line-height: 16px;
+    }
+    .a2a_mini_services:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+    .a2a_mini_services{*+height:1%;}
+</style>
+
+</div>
+
+            
+    
+        <a href="http://marslayman.github.io/2017/03/07/Create-a-single-page-with-only-CSS-HTML-from-a-PSD-design-file/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://marslayman.github.io/2017/03/07/Create-a-single-page-with-only-CSS-HTML-from-a-PSD-design-file/">Comments</a>
+    
+
+        </footer>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+    
+        <a href="/2017/01/17/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">Older</strong>
+            <div class="article-nav-title">Hello World</div>
+        </a>
+    
+</nav>
+
+
+    
+</article>
+
+
+    
+    <section id="comments">
+    
+        
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+
+    
+    </section>
+
+</section>
+            
+                <aside id="sidebar">
+   
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">recent</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2017/03/07/Create-a-single-page-with-only-CSS-HTML-from-a-PSD-design-file/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/css/images/header2.jpg)" alt="Create a single page with only CSS &amp; HTML from a PSD design file" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Frontend/">Frontend</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/Frontend/practice/">practice</a></p>
+                            <p class="item-title"><a href="/2017/03/07/Create-a-single-page-with-only-CSS-HTML-from-a-PSD-design-file/" class="title">Create a single page with only CSS &amp; HTML from a PSD design file</a></p>
+                            <p class="item-date"><time datetime="2017-03-07T07:29:13.000Z" itemprop="datePublished">2017-03-07</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2017/01/17/hello-world/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2017/01/17/hello-world/" class="title">Hello World</a></p>
+                            <p class="item-date"><time datetime="2017-01-17T05:29:27.249Z" itemprop="datePublished">2017-01-17</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">categories</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Frontend/">Frontend</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Frontend/practice/">practice</a><span class="category-list-count">1</span></li></ul></li></ul>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">archives</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">March 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">January 2017</a><span class="archive-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">tags</h3>
+        <div class="widget">
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/HTML5/">HTML5</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/css3/">css3</a><span class="tag-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">tag cloud</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/HTML5/" style="font-size: 10px;">HTML5</a> <a href="/tags/css3/" style="font-size: 10px;">css3</a>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">links</h3>
+        <div class="widget">
+            <ul>
+                
+                    <li>
+                        <a href="http://hexo.io">Hexo</a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+
+    
+    <div id="toTop" class="fa fa-angle-up"></div>
+</aside>
+            
+        </div>
+        <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            &copy; 2017 Marslayman<br>
+            Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. Theme by <a href="http://github.com/ppoffice">PPOffice</a>
+        </div>
+    </div>
+</footer>
+        
+    
+    <script>
+    var disqus_config = function () {
+        
+            this.page.url = 'http://marslayman.github.io/2017/03/07/Create-a-single-page-with-only-CSS-HTML-from-a-PSD-design-file/';
+        
+        this.page.identifier = 'Create-a-single-page-with-only-CSS-HTML-from-a-PSD-design-file';
+    };
+    (function() { 
+        var d = document, s = d.createElement('script');  
+        s.src = '//' + 'marslayman' + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+
+
+
+    
+        <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-share.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-video.min.js"></script>
+    
+    
+        <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+    
+
+
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
+</body>
+</html>

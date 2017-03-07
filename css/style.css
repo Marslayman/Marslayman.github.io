@@ -883,6 +883,9 @@ a.article-title:hover {
 .article-entry:after {
   clear: both;
 }
+.article-entry p {
+  text-align: justify;
+}
 .article-entry p,
 .article-entry table {
   line-height: 1.6em;
@@ -1341,6 +1344,15 @@ ol.toc {
   -moz-transition: color 0.3s ease-out;
   -ms-transition: color 0.3s ease-out;
   transition: color 0.3s ease-out;
+}
+.article.rtl .article-title,
+.article.rtl .article-entry p {
+  direction: rtl;
+}
+.article.rtl .article-meta > div {
+  float: right;
+  margin-left: 10px;
+  margin-right: 0;
 }
 .lg-outer .lg-thumb-item {
   border-radius: 0 !important;
@@ -2114,66 +2126,59 @@ ol.toc {
   height: 1.6em;
 }
 .highlight {
-  color: #f8f8f2;
-  background: #23241f;
+  color: #ddd;
+  background: #272822;
 }
-.highlight .code .highlight,
 .highlight .code .tag,
-.highlight .code .subst {
-  color: #f8f8f2;
-}
-.highlight .code .strong,
-.highlight .code .emphasis {
-  color: #a8a8a2;
-}
-.highlight .code .bullet,
-.highlight .code .quote,
-.highlight .code .number,
-.highlight .code .regexp,
-.highlight .code .literal,
-.highlight .code .link {
-  color: #ae81ff;
-}
-.highlight .code .code,
-.highlight .code .title,
-.highlight .code .section,
-.highlight .code .selector-class {
-  color: #a6e22e;
-}
-.highlight .code .strong {
-  font-weight: bold;
-}
-.highlight .code .emphasis {
-  font-style: italic;
-}
 .highlight .code .keyword,
 .highlight .code .selector-tag,
-.highlight .code .name,
-.highlight .code .attr {
+.highlight .code .literal,
+.highlight .code .strong,
+.highlight .code .name {
   color: #f92672;
 }
-.highlight .code .symbol,
-.highlight .code .attribute {
+.highlight .code .code {
   color: #66d9ef;
 }
-.highlight .code .params,
 .highlight .code .class .title {
-  color: #f8f8f2;
+  color: #fff;
+}
+.highlight .code .attribute,
+.highlight .code .symbol,
+.highlight .code .regexp,
+.highlight .code .link {
+  color: #bf79db;
 }
 .highlight .code .string,
+.highlight .code .bullet,
+.highlight .code .subst,
+.highlight .code .title,
+.highlight .code .section,
+.highlight .code .emphasis,
 .highlight .code .type,
 .highlight .code .built_in,
 .highlight .code .builtin-name,
-.highlight .code .selector-id,
 .highlight .code .selector-attr,
 .highlight .code .selector-pseudo,
 .highlight .code .addition,
 .highlight .code .variable,
+.highlight .code .template-tag,
 .highlight .code .template-variable {
-  color: #e6db74;
+  color: #a6e22e;
 }
 .highlight .code .comment,
+.highlight .code .quote,
 .highlight .code .deletion,
 .highlight .code .meta {
   color: #75715e;
+}
+.highlight .code .keyword,
+.highlight .code .selector-tag,
+.highlight .code .literal,
+.highlight .code .doctag,
+.highlight .code .title,
+.highlight .code .section,
+.highlight .code .type,
+.highlight .code .selector-id {
+  font-weight: bold;
 }
